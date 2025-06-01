@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sago Holidays</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css_prop/Sago.css">
+</head>
+
+<body>
+
+  <!-- <div class = "top-head">
+
+        <div class="container th-container">
+            <div class="row justify-content-center justify-content-xl-between align-items-center">
+                <div class="col-auto d-none d-md-block">
+                    <div class="header-links">
+                        <ul>
+                            <li class="d-none d-xl-inline-block"><i class="fa-sharp fa-regular fa-location-dot"></i> <span>No: 99,100, Dr Raju Road, Tatabad, Sivananda colony, Coimbatore - 641 012</span></li>
+                            <li class="d-none d-xl-inline-block"><i class="fa-regular fa-clock"></i> <span>Sun to Friday: 8.00 am - 7.00 pm</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="header-right">
+                       
+                        <div class="header-links">
+                            <ul>
+                                <li class="d-none d-xl-inline-block"><a href="tel:+91 9790020366">+91 9790020366</a></li>
+                                <li class="d-none d-xl-inline-block"><a href="info@nileholidays.in">info@nileholidays.in</a></li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+
+
+  <header>
+    <div class="container">
+      <div class="logo" style="background-image: url('images/logo_sago_hollidays.png');"></div>
+      <nav>
+        <a href="#destinations" style="padding-right:30px">Destinations</a>
+        <a href="#about" style="padding-right:30px">About</a>
+        <a href="#services" style="padding-right:30px">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+
+
+
+
+  <!-- <section class="hero"
+    style="background-image: url('images/paris_bg.jpg'); background-size: cover; background-position: center; height: 500px;">
+    <br>
+    <br>
+    <br>
+    <div class="container">
+      <h2>Explore the World with Us</h2>
+      <p>Unforgettable vacations, curated for you.</p>
+      <a href="#destinations" class="btn">View Destinations</a>
+    </div>
+  </section> -->
+
+
+  <section class="hero" id="slider"
+    style="background-image: url('images/paris_bg.jpg'); background-size: cover; background-position: center; height: 600px; color: #fff">
+    <br>
+    <br>
+    <br>
+    <div class="container">
+      <h2>Explore the World with Us</h2>
+      <p>Unforgettable vacations, curated for you.</p>
+      <a href="#destinations" class="btn">View Destinations</a>
+    </div>
+  </section>
+
+
+
+  <script>
+    let images = [
+      { url: 'images/paris_bg.jpg', color: '#fff' },
+      { url: 'images/london_bg.jpg', color: '#fff' },
+      { url: 'images/mecca_bg.jpg', color: '#fff' },
+      { url: 'images/church_bg.jpg', color: '#fff' },
+      { url: 'images/temple_bg.jpg', color: '#fff' }
+    ];
+
+    let currentIndex = 0;
+
+    function changeBackground() {
+      let heroSection = document.getElementById('slider');
+      let heading = document.querySelector('.container h2');
+      let paragraph = document.querySelector('.container p');
+
+      // Change background image
+      heroSection.style.backgroundImage = `url(${images[currentIndex].url})`;
+
+      // Change text color
+      heading.style.color = images[currentIndex].color;
+      paragraph.style.color = images[currentIndex].color;
+
+      // Loop through images array
+      currentIndex = (currentIndex + 1) % images.length;
+    }
+
+    setInterval(changeBackground, 5000); // Change every 5 seconds
+  </script>
+
+
+
+  <!-- <script>
+    let images = ['images/paris_bg.jpg', 'images/london_bg.jpg', 'images/mecca_bg.jpg', 'images/church_bg.jpg', 'images/temple_bg.jpg'];
+    let currentIndex = 0;
+
+    function changeBackground() {
+      document.getElementById('slider').style.backgroundImage = `url(${images[currentIndex]})`;
+      currentIndex = (currentIndex + 1) % images.length; // Loops through images
+    }
+
+    setInterval(changeBackground, 5000); 
+  </script> -->
+
+
+
+  <section id="about" class="about">
+    <div class="container">
+      <h1 style="color: #2b18ff;font-size: 3rem;">About Us</h1>
+      <p style="font-size:1.5rem;">Sago Holidays has over 2 years of experience creating unforgettable travel
+        experiences. Our team is passionate about helping you find the perfect holiday—whether it’s adventure,
+        relaxation, or both.</p>
+    </div>
+  </section>
+
+
+
+  <section id="destinations" class="destinations">
+    <div class="container">
+      <h2 style="color:#2b18ff">Where Memories Begin</h2>
+      <br>
+      <div class="cards">
+        <div class="card">
+          <img src="images/bali_bg.jpg" alt="Bali">
+          <h3>Bali</h3>
+          <p>Tropical paradise with beaches and temples.</p>
+        </div>
+
+        <div class="card">
+          <img src="images/parris_bg.jpeg" alt="Paris">
+          <h3>Paris</h3>
+          <p>Romantic city with culture and cuisine.</p>
+        </div>
+
+        <div class="card">
+          <img src="images/maldives_bg.jpg" alt="Maldives">
+          <h3>Maldives</h3>
+          <p>Luxury resorts and crystal clear waters.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="services" class="destinations">
+    <div class="container">
+      <h2 style="color:#2b18ff">Explore Our Signature Trips</h2>
+      <br>
+      <div class="cards">
+        <div class="card">
+          <img src="images/Sdo.jpg" alt="Bali">
+          <h3>Strangers Day_Out</h3>
+          <p>Hey, every great friendship starts somewhere. Why not here?</p>
+        </div>
+
+        <div class="card">
+          <img src="images/honeymoontrip.jpg" alt="Paris">
+          <h3>Honeymoon</h3>
+          <p>We travel not to escape life, but for life not to escape us—especially when love leads the way</p>
+        </div>
+
+        <div class="card">
+          <img src="images/family.jpg" alt="Maldives">
+          <h3>Family Trips</h3>
+          <p>Family vacations are where love grows, memories are made, and adventure never ends</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <section class="testimonials">
+    <div class="container">
+      <h2 style="color:#2b18ff">Vibes From Our Voyagers</h2>
+      <br>
+      <div class="cards">
+        <div class="card">
+          <p>"Best vacation of my life! Everything was perfectly planned."</p>
+          <h4 style="color:#2b18ff">– Meenalochini</h4>
+        </div>
+        <div class="card">
+          <p>"Excellent service and beautiful destinations. Highly recommend!"</p>
+          <h4 style="color:#2b18ff">– Nandhitha</h4>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <section id="contact" class="contact">
+
+    <div class="container">
+      <h2 style="color: #2b18ff;">Contact Us</h2>
+      <br>
+      <form action="submit-form.php" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <!-- <button type="submit">Send Mail</button> -->
+        <button type="submit">Send Whatsapp</button>
+
+        <!-- <div class="button-group">
+          <button type="submit">Send Mail</button>
+          <button type="submit" class="whatsapp-btn">Send Whatsapp</button>
+        </div> -->
+
+
+      </form>
+    </div>
+
+
+  </section>
+
+  <!-- Email -->
+
+
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("QtbMg7jYeXlJJrV66"); // Replace with your actual Public Key
+    })();
+  </script>
+
+
+
+  <script>
+    document.querySelector(".contact form").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+     
+
+
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+
+      emailjs.send("service_nray86p", "ejs-test-mail-service__", {
+        from_name: name,
+        from_email: email,
+        message: message
+      }).then(function (response) {
+        alert("Thank you! Your message has been sent.");
+      }, function (error) {
+        alert("Oops! Something went wrong. Please try again.");
+      });
+    });
+  </script>
+
+
+
+  <!-- Whatsapp -->
+  <script>
+    document.querySelector(".whatsapp-btn").addEventListener("click", function (event) {
+      event.preventDefault();
+
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+
+      var whatsappMessage = encodeURIComponent(`Hello, I am ${name}.\nEmail: ${email}\nMessage: ${message}`);
+
+      var phoneNumber = "+919361687361";
+
+
+      window.open(`https://wa.me/${phoneNumber}?text=${whatsappMessage}`, "_blank");
+    });
+  </script>
+
+
+
+
+  <section class="contact2">
+    <div class="container">
+      <h2 style="color: #2b18ff;">For More Info</h2>
+      <br>
+
+      <div class="contact2-items">
+        <div class="contact2-item">
+          <a href="https://wa.me/6382370665" target="_blank">
+            <img src="images/whatsapp.png" alt="WhatsApp">
+            <p>+91 63823 70665</p>
+          </a>
+        </div>
+        <div class="contact2-item">
+          <a href="https://www.instagram.com/sagoholidays?igsh=MXJsZ3cwc290ZXV5ZQ==" target="_blank">
+            <img src="images/instagram.png" alt="Instagram">
+            <p>Sago Holiday</p>
+          </a>
+        </div>
+        <div class="contact2-item">
+          <a href="mailto:yourmail@example.com">
+            <img src="images/email.png" alt="Email">
+            <p>sagoholidays@gmail.com</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Sago Holidays. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
